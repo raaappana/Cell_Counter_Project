@@ -1,0 +1,25 @@
+{
+    "custom_classes": 2,
+    "images": [
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "malariaInfectedRBC",
+                            "score": 0.0415101
+                        },
+                        {
+                            "class": "malariaUninfectedRBC",
+                            "score": 0.597968
+                        }
+                    ],
+                    "classifier_id": "RedBloodCell_349295707",
+                    "name": "RedBloodCell"
+                }
+            ],
+            "image": "overlap1--Sample--1--Object--12.jpg"
+        }
+    ],
+    "images_processed": 1
+}
