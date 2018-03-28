@@ -1,0 +1,36 @@
+
+cd CellProfiler3
+
+"%CP%" -c -r -p "%pipe%" -i "%expIn% -o "%~dp0"
+"%CP%" -c -r -p "%pipe%" -i "%expIn%\*" -o "%~dp0"
+
+rem %CP% -c -r -p %pipe% -i "%~dp0OutputFiles\%fileDirWTime%" -o "%OrigDir%"
+rem %CP% -c -r -p %pipe% -i "%~dp0OutputFiles\%fileDirWTime%" -o "%OrigDir%"
+
+
+rem 999999999999999999999
+
+echo Running CellProfiler on JPG files subfolder %fileDirWTime%
+rem what is -c?, -r?, -i is input, -o is output, -p is pipeline
+
+set tpipe="%~dp0\pipeline.cpproj"
+set tpipe3="%~dp0pipe3.cppipe"
+set tpipe4="%~dp0pipe4.cppipe"
+
+echo %tpipe4%
+
+"C:\Program Files (x86)\CellProfiler\CellProfiler.exe" -c -r -p %tpipe4% -i "%~dp0OutputFiles\%fileDirWTime%" -o "%~dp0testOut"
+
+rem 0000000000000000000000
+
+
+
+
+
+
+
+
+
+
+
+
