@@ -1,24 +1,16 @@
 @echo off
 
-rem This is the executed part of my program.
-rem The code initially attempts to set a few globally used variables
 
-
-rem *==============================================================================*
-rem I should sort through every jpg file in a folder and then rename it to order it by time.
-rem *==============================================================================*
-
-
-
+:: Logo and notes
 
 echo *==============================================================================*
 echo *                                                                              *
-echo *       *-_-'-_-* RUNNING ANDREW'S MAGIC BLOOD CELL COUNTER *-_-'-_-*          *
+echo *                 RUNNING ANDREW'S MAGIC BLOOD CELL COUNTER                    *
 echo *                          Made by: Andrew Raappana                            *
 echo *                                  v0.02                                       *
 echo *==============================================================================*
 echo.
-echo NOTE: This program is unstable. Expect errors.
+echo NOTE: This program might have errors depending on the operating system.
 echo.
 echo Thank you,
 echo Andrew
@@ -30,12 +22,16 @@ echo.
 
 
 
+:: Setting script, folders, and Cell Profiler paths
+
 set OrigDir=%~dp0
 set batPath=%~dp0Bat and Misc Scripts
 set AMBCC=%~dp0AMBCC Scripts
 set CP=%~dp0CellProfiler3\CellProfiler.exe
 set ArchiveF=%~dp0Former Inputs
 set OutF=%~dp0Results
+
+:: Setting paths to Cell profiler pipeline, python, and 
 
 set anac3="%~dp0\Anaconda3\python.exe"
 set pipe="%~dp0CPpipev05.cppipe"
