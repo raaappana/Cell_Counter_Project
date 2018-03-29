@@ -1,0 +1,1 @@
+"Microscope output folder path here, with double quotes around them"
