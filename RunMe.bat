@@ -13,7 +13,7 @@ echo.
 FOR /F "tokens=* delims=" %%x IN (WatchedFolder.txt) DO SET WatchedFolderLocationSans=%%x
 set WatchedFolderLocation="%WatchedFolderLocationSans%"
 
-rem Look at what our WatchedFolder is
+:: Look at what our WatchedFolder is
 set Watched
 
 echo.
